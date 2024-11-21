@@ -1,0 +1,7 @@
+language: csharp
+mono: none
+dotnet: 2.0.0
+dist: trusty
+script:
+ - dotnet build -c Release src/F23.StringSimilarity/F23.StringSimilarity.csproj
+ - dotnet test test/F23.StringSimilarity.Tests/F23.StringSimilarity.Tests.csproj
